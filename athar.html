@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>أثر | ATHAR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f4;--cd:#fff;--tx:#172033;--mu:#667085;--ln:#dde3ea;--ac:#0b7a6b;--ac2:#b7791f;--bd:#b42318;--soft:#e4f2ef;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e141b;--cd:#16202b;--tx:#e6ebf1;--mu:#93a0b2;--ln:#26323f;--ac:#4cc9b0;--ac2:#e5b454;--bd:#f97066;--soft:#14302e;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#0e141b;--cd:#16202b;--tx:#e6ebf1;--mu:#93a0b2;--ln:#26323f;--ac:#4cc9b0;--ac2:#e5b454;--bd:#f97066;--soft:#14302e;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 15px/1.7 Tajawal,system-ui,sans-serif}
+.app{display:grid;grid-template-columns:210px minmax(0,1fr);min-height:100vh}
+.side{position:sticky;top:0;height:100vh;padding:18px 12px;border-inline-end:1px solid var(--ln);background:var(--cd);display:flex;flex-direction:column;gap:2px;overflow:auto}
+.brand{font:700 30px Amiri,serif;color:var(--ac);padding:2px 10px 12px;line-height:1.2}.brand small{display:block;font:400 11px Tajawal;color:var(--mu);letter-spacing:2px}
+.side a{display:block;padding:9px 12px;border-radius:10px;color:var(--mu);text-decoration:none}.side a.on{background:var(--soft);color:var(--ac);font-weight:700}
+main{padding:20px clamp(14px,3vw,34px) 90px;max-width:1100px;width:100%}
+h1{font:700 32px Amiri,serif;margin:0}h2{font-size:17px;margin:0 0 10px}h3{font-size:15px;margin:0}
+.cd{background:var(--cd);border:1px solid var(--ln);border-radius:14px;padding:16px}.g{display:grid;gap:12px;margin-bottom:12px}.g2{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}.g4{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.n{font:700 32px Amiri,serif;color:var(--ac);line-height:1.2}.mu{color:var(--mu);font-size:13px}.qt{font:700 24px/1.6 Amiri,serif;margin-top:4px}
+.b{font:inherit;border:1px solid var(--ln);background:var(--cd);color:var(--tx);border-radius:10px;padding:7px 13px;cursor:pointer}.b:hover{border-color:var(--ac)}.b.p{background:var(--ac);border-color:var(--ac);color:var(--bg);font-weight:700}.b.d{color:var(--bd)}.b.s{padding:2px 9px;font-size:13px}
+input,select,textarea{font:inherit;width:100%;background:var(--bg);color:var(--tx);border:1px solid var(--ln);border-radius:9px;padding:8px 10px}:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+label{display:block;font-size:13px;color:var(--mu);margin-bottom:10px}label input,label select,label textarea{margin-top:3px;font-size:15px}
+.tag{display:inline-block;background:var(--soft);color:var(--ac);border-radius:99px;padding:0 10px;font-size:12px}.tag.w{background:transparent;color:var(--ac2);border:1px solid var(--ac2)}
+.bar{height:8px;background:var(--ln);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:var(--ac)}.br{display:grid;grid-template-columns:130px 1fr 34px;gap:8px;align-items:center;font-size:13px;margin:6px 0}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.sp{flex:1}.row>input,.row>select{width:auto}
+.bk{display:flex;gap:12px;cursor:pointer}.cov{width:64px;height:92px;border-radius:6px;object-fit:cover;background:var(--soft);flex:none;display:grid;place-items:center;font:700 24px Amiri,serif;color:var(--ac)}.cov.l{width:90px;height:130px}
+blockquote{margin:6px 0;padding:2px 12px;border-inline-start:3px solid var(--ac2);color:var(--mu)}details{margin:6px 0}summary{cursor:pointer;color:var(--ac)}p{margin:6px 0}
+dialog{border:1px solid var(--ln);border-radius:16px;background:var(--cd);color:var(--tx);width:min(580px,94vw);max-height:90vh;padding:18px;overflow:auto}dialog::backdrop{background:#0008}
+.toast{position:fixed;bottom:84px;inset-inline:0;margin:auto;width:max-content;max-width:90vw;background:var(--tx);color:var(--bg);padding:9px 16px;border-radius:10px;z-index:30}.toast.e{background:var(--bd);color:#fff}.toast[hidden]{display:none}
+.warn{background:var(--bd);color:#fff;border-radius:10px;padding:8px 12px;margin-bottom:12px}.aib{display:none}body.ai .aib{display:inline-block}
+@media(max-width:800px){.app{display:block}.side{position:fixed;bottom:0;inset-inline:0;top:auto;height:auto;flex-direction:row;overflow-x:auto;padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px));border-inline-end:0;border-top:1px solid var(--ln);z-index:5}.side a{white-space:nowrap;padding:8px 11px}.brand{display:none}.toast{bottom:100px}}
+</style></head><body>
+<div class="app"><nav class="side" id="nav"></nav><main><div id="warn"></div>
+<form id="qc" class="row" style="margin-bottom:14px"><input id="qci" style="flex:1;min-width:0" placeholder="صندوق الوارد السريع: اكتب فكرة واضغط Enter" aria-label="فكرة سريعة" maxlength="300"><button class="b p">حفظ الفكرة</button></form>
+<div id="main"></div></main></div>
+<dialog id="dlg"></dialog><dialog id="cf"></dialog><div class="toast" id="toast" hidden></div>
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,6),today=()=>new Date().toISOString().slice(0,10);
+const addD=(d,n)=>{const x=new Date(d+'T12:00:00Z');x.setUTCDate(x.getUTCDate()+n);return x.toISOString().slice(0,10)};
+const BST={want:'أريد قراءته',todo:'لم أبدأ',reading:'أقرأ حالياً',paused:'متوقف مؤقتاً',done:'مكتمل'};
+const IST={new:'فكرة جديدة',study:'تحتاج إلى دراسة',ready:'جاهزة للتجربة',doing:'قيد التطبيق',applied:'تم تطبيقها',habit:'أصبحت عادة',failed:'لم تنجح',drop:'تم استبعادها'};
+const AGREE={undecided:'لم أقرر',yes:'نعم',part:'جزئياً',no:'لا'};
+const QT=['المعرفة التي لا تغيّر سلوكك مجرد معلومة محفوظة.','فكرة واحدة تُجرَّب اليوم خير من عشر أفكار تُدوَّن للغد.','اسأل نفسك بعد كل كتاب: ما أصغر خطوة أبدأ بها غداً؟','الفهم يبدأ بالتذكر، لكن الأثر يبدأ بالتنفيذ.','قِس ما جرّبته، ثم قرّر بنفسك: أستمر أم أعدّل أم أتوقف.','لا تحكم على الفكرة قبل أن تمتحنها في حياتك.'];
+let cfg={cats:['الدين والعقيدة','علم النفس وفهم الإنسان','التفكير النقدي والمنطق والفلسفة','التاريخ والحضارات','العلوم والطب والتكنولوجيا','تطوير الذات والإنتاجية','الروايات والتحقيق والغموض','اللغة الإنجليزية'],iv:[1,3,7,30,90],keep:30};
+try{Object.assign(cfg,JSON.parse(localStorage.getItem('athar_cfg')||'{}'))}catch(e){}
+const saveCfg=()=>{try{localStorage.setItem('athar_cfg',JSON.stringify(cfg))}catch(e){toast('تعذّر حفظ الإعدادات',1)}};
+const setTheme=t=>{t==='auto'?document.documentElement.removeAttribute('data-theme'):document.documentElement.dataset.theme=t;try{localStorage.setItem('athar_theme',t)}catch(e){}};
+try{setTheme(localStorage.getItem('athar_theme')||'auto')}catch(e){}
+function toast(m,e){const t=$('#toast');t.textContent=m;t.className='toast'+(e?' e':'');t.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>t.hidden=true,e?6000:2200)}
+/* التخزين الدائم: IndexedDB */
+let db,mem=false,D=[];
+const open=()=>new Promise(r=>{try{const q=indexedDB.open('athar',1);q.onupgradeneeded=()=>q.result.createObjectStore('i',{keyPath:'id'});q.onsuccess=()=>{db=q.result;r()};q.onerror=q.onblocked=()=>{mem=true;r()}}catch(e){mem=true;r()}});
+const all=()=>new Promise(r=>{if(mem)return r([]);try{const q=db.transaction('i').objectStore('i').getAll();q.onsuccess=()=>r(q.result);q.onerror=()=>{mem=true;r([])}}catch(e){mem=true;r([])}});
+function put(o){D=D.filter(x=>x.id!==o.id);D.push(o);if(mem)return;try{const t=db.transaction('i','readwrite');t.objectStore('i').put(o);t.onerror=t.onabort=()=>toast('تعذّر حفظ البيانات! صدّر نسخة احتياطية الآن.',1)}catch(e){toast('تعذّر حفظ البيانات! صدّر نسخة احتياطية الآن.',1)}}
+function rm(id){D=D.filter(x=>x.id!==id);if(!mem)try{db.transaction('i','readwrite').objectStore('i').delete(id)}catch(e){toast('تعذّر الحذف',1)}}
+const of=t=>D.filter(x=>x.t===t&&!x.d),get=id=>D.find(x=>x.id===id),live=id=>{const o=get(id);return o&&!o.d?o:null};
+const log=(m,k)=>put({id:uid(),t:'log',at:Date.now(),m,k:k||''}),sv=(o,m)=>{o.u=Date.now();put(o);log(m)};
+const isA=i=>i.st==='applied'||i.st==='habit',pct=(a,b)=>b?Math.round(a/b*100)+'%':'—';
+const catsO=()=>Object.fromEntries(cfg.cats.map(c=>[c,c])),booksO=()=>Object.fromEntries(of('book').map(b=>[b.id,b.title])),ideasO=()=>({'':'— بدون —',...Object.fromEntries(of('idea').map(i=>[i.id,i.title]))});
+/* النماذج: [المفتاح، التسمية، النوع، الخيارات، إلزامي] */
+const FB=[['title','اسم الكتاب','text',0,1],['author','اسم المؤلف','text'],['cover','رابط صورة الغلاف','text'],['coverf','أو ارفع صورة الغلاف','file'],['cat','التصنيف الرئيسي','sel',catsO],['sub','التصنيف الفرعي','text'],['desc','وصف الكتاب','area'],['start','تاريخ بدء القراءة','date'],['end','تاريخ الانتهاء','date'],['pages','عدد الصفحات','num'],['cur','الصفحة الحالية','num'],['st','حالة الكتاب','sel',BST],['rate','التقييم','sel',{0:'بدون تقييم',1:'★',2:'★★',3:'★★★',4:'★★★★',5:'★★★★★'}],['notes','ملاحظات عامة','area']];
+const FI=[['title','عنوان الفكرة','text',0,1],['exp','شرح الفكرة بأسلوبي','area'],['quote','الاقتباس الأصلي','area'],['bk','الكتب المرتبطة (يمكن اختيار أكثر من كتاب)','multi',booksO],['pg','رقم الصفحة','text'],['cat','التصنيف','sel',catsO],['imp','أهميتها بالنسبة لي','sel',{1:'منخفضة',2:'متوسطة',3:'عالية'}],['why','لماذا أراها مفيدة؟','area'],['prob','ما المشكلة التي تساعدني على حلها؟','area'],['agree','هل أوافق عليها؟','sel',AGREE],['ex','مثال واقعي عليها','area'],['tags','وسوم (مفصولة بفاصلة)','text']];
+const FP=[['p1','1) ماذا سأطبق؟','area'],['p2','2) لماذا أريد تطبيقه؟','area'],['p3','3) في أي جانب من حياتي؟','text'],['p4','4) ما السلوك المحدد الذي سأقوم به؟','area'],['p5','5) متى وأين سأقوم به؟','text'],['p6','6) ما أول خطوة صغيرة؟','text'],['p7','7) ما العائق المتوقع؟','text'],['p8','8) ما الحل البديل؟','text'],['p9','9) كيف سأقيس النجاح؟','text'],['p10','10) متى سأراجع النتائج؟','date']];
+const FE=[['name','اسم التجربة','text',0,1],['idea','الفكرة الأصلية','sel',ideasO],['goal','الهدف','area'],['days','مدة التجربة (أيام)','num'],['start','تاريخ البداية','date'],['end','تاريخ النهاية','date'],['steps','خطوات التنفيذ','area'],['before','القياس قبل التجربة (إن أمكن)','text']];
+const FF=[['res','النتيجة النهائية','area',0,1],['learn','ماذا تعلمت من التجربة؟','area'],['after','القياس بعد التجربة','text'],['dec','قراري','sel',{continue:'أستمر',adjust:'أعدّل',stop:'أتوقف'}]];
+const SEC=[['s1','ملخص الكتاب'],['s2','الأفكار الرئيسية'],['s3','الاقتباسات المهمة'],['s4','الدروس المستفادة'],['s5','الأسئلة التي أثارها الكتاب'],['s6','اعتراضات وأفكار لم أقتنع بها'],['s7','التطبيقات العملية'],['s8','مراجعتي النهائية للكتاب']];
+function fld(f,v){const[k,l,t,o,q]=f,r=q?' required':'';v=v??'';let c;
+if(t==='area')c=`<textarea name="${k}" rows="3"${r}>${esc(v)}</textarea>`;
+else if(t==='sel'){const m=typeof o==='function'?o():o;c=`<select name="${k}">${Object.entries(m).map(([a,b])=>`<option value="${esc(a)}"${String(a)===String(v)?' selected':''}>${esc(b)}</option>`).join('')}</select>`}
+else if(t==='multi'){const m=Object.entries(o());c=m.length?`<select name="${k}" multiple size="${Math.min(4,m.length)}">${m.map(([a,b])=>`<option value="${a}"${(v||[]).includes(a)?' selected':''}>${esc(b)}</option>`).join('')}</select>`:'<div class="mu">لا توجد كتب بعد؛ أضف كتاباً من «مكتبتي».</div>'}
+else if(t==='file')c='<input type="file" name="'+k+'" accept="image/*">';
+else c=`<input name="${k}" type="${t==='num'?'number':t==='date'?'date':'text'}" value="${esc(v)}"${t==='num'?' min="0"':''}${r}>`;
+return `<label>${l}${c}</label>`}
+function form(title,F,o,ok,chk){const d=$('#dlg');d.innerHTML=`<form method="dialog"><h2>${title}</h2>${F.map(f=>fld(f,o[f[0]])).join('')}<div class="row"><button class="b p" value="ok">حفظ</button><button class="b" value="x" formnovalidate>إلغاء</button></div></form>`;
+d.querySelector('form').onsubmit=async e=>{if(e.submitter?.value!=='ok')return;e.preventDefault();const fd=new FormData(e.target),v={};
+for(const[k,,t]of F){if(t==='file')continue;v[k]=t==='multi'?fd.getAll(k):String(fd.get(k)??'').trim();if(t==='num'&&v[k]!=='')v[k]=+v[k]}
+const er=chk&&chk(v);if(er)return toast(er,1);
+const ff=F.find(f=>f[2]==='file'),fl=ff&&fd.get(ff[0]);
+if(fl&&fl.size){if(fl.size>1.5e6)return toast('الصورة كبيرة؛ الحد الأقصى 1.5 ميغابايت',1);v.cover=await new Promise(r=>{const x=new FileReader();x.onload=()=>r(x.result);x.readAsDataURL(fl)})}
+ok(v);d.close()};d.showModal()}
+const ask=m=>new Promise(r=>{const d=$('#cf');d.returnValue='';d.innerHTML=`<form method="dialog"><p>${esc(m)}</p><div class="row"><button class="b d" value="y">نعم، تابع</button><button class="b" value="n">تراجع</button></div></form>`;d.onclose=()=>r(d.returnValue==='y');d.showModal()});
+/* الأفكار والمراجعات */
+function newIdea(v){const o={id:uid(),t:'idea',c:Date.now(),st:'new',agree:'undecided',imp:2,fav:0,bk:[],hist:[{s:'new',at:Date.now()}],rv:{s:0,n:addD(today(),cfg.iv[0]||1)},...v};sv(o,'فكرة جديدة: '+o.title);return o}
+const due=()=>of('idea').filter(i=>i.rv&&i.rv.n&&i.rv.n<=today()).sort((a,b)=>a.rv.n<b.rv.n?-1:1);
+function streak(){const s=new Set(D.filter(x=>x.k==='rev').map(x=>new Date(x.at).toISOString().slice(0,10)));let d=s.has(today())?today():addD(today(),-1),n=0;while(s.has(d)){n++;d=addD(d,-1)}return n}
+const names=i=>(i.bk||[]).map(id=>live(id)?.title).filter(Boolean).join('، ');
+const stat=(n,l,s)=>`<div class="cd"><div class="n">${n}</div><div>${l}</div>${s?`<div class="mu">${s}</div>`:''}</div>`;
+const bars=(rows,max)=>rows.map(([l,n])=>`<div class="br"><span>${esc(l)}</span><div class="bar"><i style="width:${max?Math.round(n/max*100):0}%"></i></div><b>${n}</b></div>`).join('');
+function ideaCard(i){const pl=FP.filter(f=>i[f[0]]).map(f=>`<div><span class="mu">${f[1]}</span> ${esc(i[f[0]])}</div>`).join('');
+return `<div class="cd" style="margin-bottom:10px"><div class="row"><h3>${esc(i.title)}</h3><span class="tag">${IST[i.st]}</span>${i.imp==3?'<span class="tag w">مهمة</span>':''}<span class="sp"></span><button class="b s" data-a="fav" data-id="${i.id}" aria-label="مفضلة">${i.fav?'★':'☆'}</button></div>
+<div class="mu">${esc(names(i))}${i.pg?' · ص '+esc(i.pg):''}${i.cat?' · '+esc(i.cat):''} · موافقتي: ${AGREE[i.agree]}${i.tags?' · '+esc(i.tags):''}</div>
+${i.exp?`<p>${esc(i.exp)}</p>`:'<p class="mu">سجل سريع غير مكتمل — اضغط «تعديل» لإكمال السجل.</p>'}${i.quote?`<blockquote>${esc(i.quote)}</blockquote>`:''}
+${i.why||i.prob||i.ex?`<details><summary>الفائدة والمثال</summary>${i.why?`<p><b>لماذا مفيدة:</b> ${esc(i.why)}</p>`:''}${i.prob?`<p><b>المشكلة:</b> ${esc(i.prob)}</p>`:''}${i.ex?`<p><b>مثال:</b> ${esc(i.ex)}</p>`:''}</details>`:''}
+${pl?`<details open><summary>خطة التطبيق</summary>${pl}</details>`:''}
+<details><summary>سجل الحالة</summary>${(i.hist||[]).map(h=>`<div class="mu">${new Date(h.at).toLocaleString('ar')} — ${IST[h.s]}</div>`).join('')}</details>
+<div class="row"><select data-ch="st" data-id="${i.id}" aria-label="الحالة">${Object.entries(IST).map(([k,v])=>`<option value="${k}"${i.st===k?' selected':''}>${v}</option>`).join('')}</select><button class="b s" data-a="editidea" data-id="${i.id}">تعديل / خطة التطبيق</button><button class="b s" data-a="toexp" data-id="${i.id}">حوّلها إلى تجربة</button><button class="b s aib" data-a="ai" data-m="app" data-id="${i.id}">مساعد: تطبيقات</button><button class="b s aib" data-a="ai" data-m="ask" data-id="${i.id}">مساعد: أسئلة نقدية</button><button class="b s aib" data-a="ai" data-m="steps" data-id="${i.id}">مساعد: خطوات</button><button class="b s d" data-a="del" data-id="${i.id}">حذف</button></div>
+<div id="ai-${i.id}" class="mu" style="white-space:pre-wrap" hidden></div></div>`}
+function bookCard(b){const p=b.pages?Math.min(100,Math.round((b.cur||0)/b.pages*100)):0;return `<div class="cd bk" data-a="openbook" data-id="${b.id}">${b.cover?`<img class="cov" src="${esc(b.cover)}" alt="" onerror="this.outerHTML='<div class=&quot;cov&quot;>${esc((b.title||'')[0])}</div>'">`:`<div class="cov">${esc((b.title||'')[0])}</div>`}<div style="flex:1;min-width:0"><h3>${esc(b.title)}</h3><div class="mu">${esc(b.author)}</div><div class="row"><span class="tag">${BST[b.st]}</span>${b.rate?`<span class="mu">${'★'.repeat(b.rate)}</span>`:''}</div><div class="mu">${esc(b.cat||'')}</div>${b.pages?`<div class="bar" style="margin-top:6px"><i style="width:${p}%"></i></div><div class="mu">${b.cur||0} / ${b.pages} ص</div>`:''}</div></div>`}
+function expCard(e){const L=e.logs||[],av=L.length?Math.round(L.reduce((s,x)=>s+x.c,0)/L.length):null,i=live(e.idea),el=e.start?Math.max(0,Math.round((new Date(today())-new Date(e.start))/864e5)):0;
+return `<div class="cd" style="margin-bottom:10px"><div class="row"><h3>${esc(e.name)}</h3><span class="tag${e.done?'':' w'}">${e.done?'منتهية':'جارية'}</span><span class="sp"></span><span class="mu">${esc(e.start||'')}${e.end?' ← '+esc(e.end):''}</span></div>
+<div class="mu">${i?'الفكرة: '+esc(i.title)+' · ':''}${e.days?'المدة '+e.days+' يوم · ':''}${!e.done&&e.start?'مضى '+el+' يوم · ':''}${av!==null?'متوسط الالتزام '+av+'% من '+L.length+' سجل':'لا سجلات بعد'}</div>
+${e.goal?`<p><b>الهدف:</b> ${esc(e.goal)}</p>`:''}${e.steps?`<p><b>الخطوات:</b> ${esc(e.steps)}</p>`:''}${e.before||e.after?`<p><b>القياس:</b> قبل: ${esc(e.before||'—')} ← بعد: ${esc(e.after||'—')}</p>`:''}
+${L.length?`<details><summary>السجل اليومي (${L.length})</summary>${L.slice().reverse().map(x=>`<p><span class="mu">${x.d} · التزام ${x.c}%</span> ${esc(x.r)}${x.h?`<br><span class="mu">الصعوبة: ${esc(x.h)}</span>`:''}</p>`).join('')}</details>`:''}
+${e.done?`<p><b>النتيجة:</b> ${esc(e.res)}</p>${e.learn?`<p><b>ما تعلمته:</b> ${esc(e.learn)}</p>`:''}<p><b>قراري:</b> ${{continue:'أستمر',adjust:'أعدّل',stop:'أتوقف'}[e.dec]}</p>`
+:`<form data-lf="${e.id}" class="row" style="align-items:end"><label style="margin:0"><span>التاريخ</span><input type="date" name="d" value="${today()}"></label><label style="margin:0;flex:1;min-width:140px"><span>نتيجة اليوم</span><input name="r" required maxlength="500"></label><label style="margin:0"><span>الالتزام</span><select name="c">${[0,10,20,30,40,50,60,70,80,90,100].map(n=>`<option${n==100?' selected':''}>${n}</option>`).join('')}</select></label><label style="margin:0"><span>الصعوبة</span><input name="h" maxlength="200"></label><button class="b p s">أضف سجلاً</button></form>`}
+<div class="row" style="margin-top:8px">${e.done?'':`<button class="b s" data-a="fin" data-id="${e.id}">إنهاء التجربة وتقييمها</button>`}<button class="b s" data-a="editexp" data-id="${e.id}">تعديل</button><button class="b s d" data-a="del" data-id="${e.id}">حذف</button></div></div>`}
+/* الصفحات */
+let pg='home',sel={},Q={};
+const tb=(o)=>`<div class="row" style="margin-bottom:12px"><input data-q="q" placeholder="ابحث…" value="${esc(Q.q||'')}" style="flex:1;min-width:130px" aria-label="بحث">${o.st?`<select data-q="st"><option value="">كل الحالات</option>${Object.entries(o.st).map(([k,v])=>`<option value="${k}"${Q.st===k?' selected':''}>${v}</option>`).join('')}</select>`:''}${o.cat?`<select data-q="cat"><option value="">كل التصنيفات</option>${cfg.cats.map(c=>`<option${Q.cat===c?' selected':''}>${esc(c)}</option>`).join('')}</select>`:''}${o.so?`<select data-q="so">${o.so.map(([k,v])=>`<option value="${k}"${Q.so===k?' selected':''}>${v}</option>`).join('')}</select>`:''}${o.add?`<button class="b p" data-a="${o.add[0]}">${o.add[1]}</button>`:''}</div><div id="lst"></div>`;
+const hit=(o,q)=>!q||JSON.stringify(Object.values(o)).toLowerCase().includes(q.toLowerCase());
+const LST={
+library(){let a=of('book').filter(b=>hit({...b,sec:0,cover:0},Q.q)&&(!Q.st||b.st===Q.st)&&(!Q.cat||b.cat===Q.cat));const so=Q.so||'new';a.sort((x,y)=>so==='rate'?(y.rate||0)-(x.rate||0):so==='read'?(y.start||'').localeCompare(x.start||''):so==='title'?x.title.localeCompare(y.title,'ar'):y.c-x.c);return a.length?`<div class="g g2">${a.map(bookCard).join('')}</div>`:'<div class="cd mu">لا توجد كتب مطابقة. أضف أول كتاب بزر «+ كتاب».</div>'},
+ideas(){let a=of('idea').filter(i=>hit(i,Q.q)&&(!Q.st||i.st===Q.st)&&(!Q.cat||i.cat===Q.cat)&&(Q.so!=='fav'||i.fav)&&(Q.so!=='inbox'||!i.exp)).sort((x,y)=>y.c-x.c);return a.length?a.map(ideaCard).join(''):'<div class="cd mu">لا توجد أفكار مطابقة. استخدم صندوق الوارد السريع في الأعلى أو زر «+ فكرة».</div>'},
+apply(){let a=of('idea').filter(i=>i.st!=='new'&&hit(i,Q.q)&&(!Q.st||i.st===Q.st)).sort((x,y)=>(y.u||0)-(x.u||0));return a.length?a.map(ideaCard).join(''):'<div class="cd mu">هنا الأفكار التي خرجت من مرحلة «فكرة جديدة». غيّر حالة فكرة من صفحة «الأفكار» وأكمل خطة تطبيقها.</div>'},
+lab(){const a=of('exp').filter(e=>hit({...e,logs:0},Q.q)&&(!Q.st||(Q.st==='run')===!e.done)).sort((x,y)=>(x.done-y.done)||(y.c-x.c));return a.length?a.map(expCard).join(''):'<div class="cd mu">لا توجد تجارب. افتح فكرة واضغط «حوّلها إلى تجربة»، أو أنشئ تجربة جديدة.</div>'}};
+const P={
+home(){const B=of('book'),I=of('idea'),E=of('exp'),ap=I.filter(isA),den=I.filter(i=>i.st!=='drop'),pl=I.filter(i=>i.p1||['ready','doing','applied','habit'].includes(i.st)),dv=due();
+const sc=Object.keys(IST).map(k=>[IST[k],I.filter(i=>i.st===k).length]);const ms=[];for(let k=5;k>=0;k--){const d=new Date();d.setUTCDate(1);d.setUTCMonth(d.getUTCMonth()-k);ms.push(d)}
+const cum=ms.map(d=>{const end=new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth()+1,1)).getTime();return[new Intl.DateTimeFormat('ar',{month:'short'}).format(d),ap.filter(i=>(i.hist||[]).some(h=>(h.s==='applied'||h.s==='habit')&&h.at<end)).length]});
+return `<h1>أثر</h1><p class="mu">لا تجمع المعرفة، اصنع منها أثراً.</p><div class="cd" style="margin:14px 0"><div class="mu">عبارة اليوم</div><div class="qt">${QT[Math.floor(Date.now()/864e5)%QT.length]}</div></div>
+<div class="g g4">${stat(B.length,'كتب مسجلة')}${stat(I.length,'أفكار مستخرجة')}${stat(pl.length,'أفكار لها خطة تطبيق')}${stat(E.filter(e=>!e.done).length,'تجارب جارية')}${stat(ap.length,'تطبيقات مكتملة')}${stat(pct(ap.length,den.length),'معدل التطبيق',`${ap.length} من ${den.length} فكرة (دون المستبعدة)`)}${stat(streak(),'أيام متتالية من المراجعة')}</div>
+<div class="g g2"><div class="cd"><h2>أفكار تنتظر المراجعة (${dv.length})</h2>${dv.slice(0,5).map(reviewRow).join('')||'<p class="mu">لا مراجعات مستحقة اليوم.</p>'}${dv.length>5?'<a href="#review">عرض الكل</a>':''}</div>
+<div class="cd"><h2>التجارب والأفكار القادمة</h2>${E.filter(e=>!e.done).map(e=>`<p>🧪 ${esc(e.name)} <span class="mu">${e.end?'تنتهي '+e.end:''}</span></p>`).join('')}${I.filter(i=>i.st==='ready').map(i=>`<p>✔ جاهزة للتجربة: ${esc(i.title)}</p>`).join('')||''}${!E.some(e=>!e.done)&&!I.some(i=>i.st==='ready')?'<p class="mu">لا شيء مجدول بعد.</p>':''}</div></div>
+<div class="g g2"><div class="cd"><h2>تطور تطبيق المعرفة (تراكمي)</h2>${bars(cum,Math.max(1,...cum.map(x=>x[1])))}</div><div class="cd"><h2>الأفكار حسب الحالة</h2>${bars(sc,Math.max(1,...sc.map(x=>x[1])))}</div></div>
+<div class="cd"><h2>آخر الكتب</h2>${B.length?`<div class="g g2">${B.sort((a,b)=>(b.u||b.c)-(a.u||a.c)).slice(0,3).map(bookCard).join('')}</div>`:'<p class="mu">لم تُسجَّل كتب بعد. ابدأ من «مكتبتي».</p>'}</div>`},
+library(){return `<div class="row"><h1>مكتبتي</h1></div>`+tb({st:BST,cat:1,so:[['new','الأحدث'],['rate','التقييم'],['read','تاريخ القراءة'],['title','الاسم']],add:['addbook','+ كتاب']})},
+ideas(){return `<h1>الأفكار</h1>`+tb({st:IST,cat:1,so:[['new','الكل'],['fav','المفضلة'],['inbox','سجلات غير مكتملة']],add:['addidea','+ فكرة']})},
+apply(){return `<h1>التطبيقات</h1><p class="mu">كل فكرة تجاوزت مرحلة «فكرة جديدة» وخطة تطبيقها.</p>`+tb({st:IST})},
+lab(){return `<h1>مختبر التجارب</h1>`+tb({st:{run:'جارية',fin:'منتهية'},add:['addexp','+ تجربة']})},
+review(){const dv=due(),up=of('idea').filter(i=>i.rv&&i.rv.n&&i.rv.n>today()).sort((a,b)=>a.rv.n<b.rv.n?-1:1);
+return `<h1>المراجعات</h1><div class="cd" style="margin:10px 0"><b>المراجعة ليست تطبيقاً.</b> إكمال المراجعة يعني أنك تذكرت الفكرة فقط؛ حالة التطبيق الفعلية تتغير يدوياً من صفحة الأفكار بعد أن تنفّذها.</div><h2>مستحقة الآن (${dv.length})</h2>${dv.map(i=>`<div class="cd" style="margin-bottom:8px">${reviewRow(i)}</div>`).join('')||'<p class="mu">لا مراجعات مستحقة. أحسنت.</p>'}<h2 style="margin-top:16px">قادمة (${up.length})</h2>${up.map(i=>`<p>${esc(i.title)} <span class="mu">— ${i.rv.n} · المرحلة ${i.rv.s+1}</span></p>`).join('')||'<p class="mu">لا شيء.</p>'}`},
+book(){const b=live(sel.book);if(!b){location.hash='library';return ''}const I=of('idea').filter(i=>(i.bk||[]).includes(b.id));
+return `<a href="#library">→ مكتبتي</a><div class="bk" style="cursor:default;margin:10px 0">${b.cover?`<img class="cov l" src="${esc(b.cover)}" alt="">`:`<div class="cov l">${esc((b.title||'')[0])}</div>`}<div style="flex:1"><h1>${esc(b.title)}</h1><div class="mu">${esc(b.author)} · ${esc(b.cat||'')}${b.sub?' / '+esc(b.sub):''}</div><div class="row"><span class="tag">${BST[b.st]}</span>${b.rate?`<span>${'★'.repeat(b.rate)}</span>`:''}<span class="mu">${b.cur||0}${b.pages?' / '+b.pages:''} ص ${b.start?' · بدأ '+b.start:''}${b.end?' · انتهى '+b.end:''}</span></div><p>${esc(b.desc)}</p>${b.notes?`<p class="mu">${esc(b.notes)}</p>`:''}<div class="row"><button class="b s" data-a="editbook" data-id="${b.id}">تعديل بيانات الكتاب</button><button class="b s" data-a="addidea" data-bk="${b.id}">+ فكرة من هذا الكتاب</button><button class="b s d" data-a="del" data-id="${b.id}">حذف</button></div></div></div>
+<div class="g g2">${SEC.map(([k,l])=>`<div class="cd"><label>${l}<textarea rows="5" data-ch="sec" data-id="${b.id}" data-k="${k}">${esc((b.sec||{})[k])}</textarea></label></div>`).join('')}</div><h2>أفكار هذا الكتاب (${I.length})</h2>${I.map(ideaCard).join('')||'<p class="mu">لا أفكار مرتبطة بعد.</p>'}`},
+reports(){const per=+(Q.per||7),sd=addD(today(),-per),sm=Date.now()-per*864e5,B=of('book'),I=of('idea'),E=of('exp'),ap=I.filter(isA),den=I.filter(i=>i.st!=='drop');
+const cats=cfg.cats.map(c=>[c,I.filter(i=>i.cat===c&&isA(i)).length,I.filter(i=>i.cat===c&&i.st!=='drop').length]).filter(x=>x[2]).sort((a,b)=>b[1]-a[1]);
+const ob={};I.filter(i=>i.p7).forEach(i=>{const k=i.p7.trim();ob[k]=(ob[k]||0)+1});const obs=Object.entries(ob).sort((a,b)=>b[1]-a[1]).slice(0,6);
+const wk=[];for(let k=5;k>=0;k--){const a=addD(today(),-7*k-6),b=addD(today(),-7*k),l=E.flatMap(e=>e.logs||[]).filter(x=>x.d>=a&&x.d<=b);wk.push([b.slice(5),l.length?Math.round(l.reduce((s,x)=>s+x.c,0)/l.length):0,l.length])}
+return `<div class="row"><h1>التقارير</h1><span class="sp"></span><select data-q="per" style="width:auto" aria-label="الفترة"><option value="7"${per===7?' selected':''}>آخر 7 أيام</option><option value="30"${per===30?' selected':''}>آخر 30 يوماً</option></select></div>
+<div class="g g4" style="margin-top:12px">${stat(B.filter(b=>b.st==='done'&&b.end>=sd).length,'كتب أنهيتها','حسب تاريخ الانتهاء المسجّل')}${stat(I.filter(i=>i.c>=sm).length,'أفكار مستخرجة')}${stat(I.filter(i=>i.agree!=='undecided'&&(i.u||0)>=sm).length,'أفكار قيّمتُها','حدّدت موافقتي وعدّلتها في الفترة')}${stat(E.filter(e=>e.start>=sd).length,'تجارب بدأت')}${stat(E.filter(e=>e.fin>=sd).length,'تجارب انتهت')}${stat(pct(ap.length,den.length),'نسبة الأفكار المطبّقة',`${ap.length} من ${den.length} (كل الأفكار غير المستبعدة)`)}${stat(I.filter(i=>!isA(i)&&i.st!=='drop'&&i.st!=='failed').length,'أفكار لم تُطبّق بعد')}</div>
+<div class="g g2"><div class="cd"><h2>التصنيفات الأكثر تطبيقاً</h2>${cats.map(c=>`<div class="br"><span>${esc(c[0])}</span><div class="bar"><i style="width:${c[2]?Math.round(c[1]/c[2]*100):0}%"></i></div><b>${c[1]}/${c[2]}</b></div>`).join('')||'<p class="mu">لا بيانات بعد.</p>'}<p class="mu">الأرقام: المطبّق / كل أفكار التصنيف (دون المستبعدة).</p></div>
+<div class="cd"><h2>أكثر العوائق تكراراً</h2>${obs.map(o=>`<p>${esc(o[0])} <span class="tag">×${o[1]}</span></p>`).join('')||'<p class="mu">لم تُسجَّل عوائق في خطط التطبيق بعد.</p>'}</div></div>
+<div class="cd"><h2>متوسط الالتزام الأسبوعي في التجارب</h2>${wk.map(w=>`<div class="br"><span>أسبوع ينتهي ${w[0]}</span><div class="bar"><i style="width:${w[1]}%"></i></div><b>${w[2]?w[1]+'%':'—'}</b></div>`).join('')}<p class="mu">يُحسب من سجلات التجارب اليومية فقط؛ «—» تعني عدم وجود سجلات.</p></div>`},
+prefs(){const tr=D.filter(x=>x.d&&x.t!=='log').sort((a,b)=>b.d-a.d),lg=D.filter(x=>x.t==='log').sort((a,b)=>b.at-a.at).slice(0,25);
+return `<h1>الإعدادات</h1><div class="g g2" style="margin-top:12px"><div class="cd"><h2>المظهر</h2><select data-ch="theme"><option value="auto">تلقائي</option><option value="light">فاتح</option><option value="dark">داكن</option></select></div>
+<div class="cd"><h2>التصنيفات</h2><textarea rows="6" data-ch="cats">${esc(cfg.cats.join('\n'))}</textarea><p class="mu">تصنيف في كل سطر. تغيير الاسم لا يحدّث الكتب القديمة.</p></div>
+<div class="cd"><h2>مواعيد المراجعة (أيام)</h2><input data-ch="iv" value="${cfg.iv.join(',')}"><p class="mu">مفصولة بفاصلة، تُطبَّق على المراجعات الجديدة.</p><h2>مدة الاحتفاظ بالمحذوفات (أيام)</h2><input type="number" min="1" data-ch="keep" value="${cfg.keep}"></div>
+<div class="cd"><h2>النسخ الاحتياطي والتصدير</h2><div class="row"><button class="b p" data-a="bak">نسخة احتياطية كاملة (JSON)</button><button class="b" data-a="csv" data-k="book">كتب CSV</button><button class="b" data-a="csv" data-k="idea">أفكار CSV</button><button class="b" data-a="csv" data-k="exp">تجارب CSV</button></div><label style="margin-top:12px">استعادة من نسخة احتياطية<input type="file" accept=".json,application/json" data-ch="imp"></label></div></div>
+<div class="cd" style="margin-bottom:12px"><h2>المحذوفات (${tr.length})</h2>${tr.map(x=>`<div class="row"><span class="sp">${esc(x.title||x.name)} <span class="mu">(${{book:'كتاب',idea:'فكرة',exp:'تجربة'}[x.t]})</span></span><button class="b s" data-a="res" data-id="${x.id}">استرجاع</button><button class="b s d" data-a="purge" data-id="${x.id}">حذف نهائي</button></div>`).join('')||'<p class="mu">لا عناصر محذوفة.</p>'}</div>
+<div class="cd"><h2>سجل النشاط</h2>${lg.map(x=>`<div class="mu">${new Date(x.at).toLocaleString('ar')} — ${esc(x.m)}</div>`).join('')||'<p class="mu">لا نشاط بعد.</p>'}</div>`}};
+function reviewRow(i){return `<div class="row"><span class="sp"><b>${esc(i.title)}</b> <span class="tag">${IST[i.st]}</span><div class="mu">مراجعة ${i.rv.s+1} · تاريخها ${i.rv.n}</div></span><button class="b s p" data-a="rvd" data-id="${i.id}">تذكّرتها</button><button class="b s" data-a="rvs" data-id="${i.id}">أجّلها يوماً</button></div>`}
+/* الإجراءات */
+const A={
+addbook(){const o={id:uid(),t:'book',c:Date.now(),st:'todo',rate:0,cat:cfg.cats[0]};bf(o,1)},
+editbook(el){bf(get(el.dataset.id))},
+openbook(el){sel.book=el.dataset.id;location.hash==='#book'?refresh():location.hash='book'},
+addidea(el){const o=el.dataset.bk?{bk:[el.dataset.bk]}:{};form('فكرة جديدة',FI,o,v=>{newIdea(v);toast('تمت إضافة الفكرة');refresh()})},
+editidea(el){const o=get(el.dataset.id);form('تعديل الفكرة وخطة التطبيق',[...FI,...FP],o,v=>{Object.assign(o,v);sv(o,'تعديل فكرة: '+o.title);toast('تم الحفظ');refresh()})},
+fav(el){const o=get(el.dataset.id);o.fav=o.fav?0:1;sv(o,'مفضلة: '+o.title);refresh()},
+toexp(el){const i=get(el.dataset.id),o={id:uid(),t:'exp',c:Date.now(),idea:i.id,name:i.title,goal:i.p1||'',steps:i.p4||'',start:today(),logs:[],done:false};form('تجربة جديدة من فكرة',FE,o,v=>{Object.assign(o,v);sv(o,'تجربة جديدة: '+o.name);location.hash='lab';toast('بدأت التجربة')},ec)},
+addexp(){const o={id:uid(),t:'exp',c:Date.now(),start:today(),logs:[],done:false};form('تجربة جديدة',FE,o,v=>{Object.assign(o,v);sv(o,'تجربة جديدة: '+o.name);refresh()},ec)},
+editexp(el){const o=get(el.dataset.id);form('تعديل التجربة',FE,o,v=>{Object.assign(o,v);sv(o,'تعديل تجربة: '+o.name);refresh()},ec)},
+fin(el){const o=get(el.dataset.id);form('إنهاء التجربة وتقييمها',FF,o,v=>{Object.assign(o,v,{done:true,fin:today()});sv(o,'انتهت تجربة: '+o.name);toast('سُجّلت النتيجة. قرّر أنت ما يلزم لحالة الفكرة.');refresh()})},
+async del(el){const o=get(el.dataset.id);if(await ask(`حذف «${o.title||o.name}»؟ يمكنك استرجاعه من الإعدادات خلال ${cfg.keep} يوماً.`)){o.d=Date.now();sv(o,'حذف: '+(o.title||o.name));if(o.t==='book'&&pg==='book')location.hash='library';else refresh();toast('تم الحذف')}},
+res(el){const o=get(el.dataset.id);delete o.d;sv(o,'استرجاع: '+(o.title||o.name));refresh()},
+async purge(el){const o=get(el.dataset.id);if(await ask('حذف نهائي لا يمكن التراجع عنه. متابعة؟')){rm(o.id);log('حذف نهائي');refresh()}},
+rvd(el){const i=get(el.dataset.id);i.rv.s++;i.rv.n=i.rv.s<cfg.iv.length?addD(today(),cfg.iv[i.rv.s]):null;sv(i,'مراجعة فكرة: '+i.title);put({id:uid(),t:'log',at:Date.now(),m:'تذكّر: '+i.title,k:'rev'});toast(i.rv.n?'مراجعة قادمة: '+i.rv.n:'اكتملت مراجعات هذه الفكرة');refresh()},
+rvs(el){const i=get(el.dataset.id);i.rv.n=addD(today(),1);sv(i,'تأجيل مراجعة: '+i.title);refresh()},
+async ai(el){const i=get(el.dataset.id),box=$('#ai-'+i.id),M={app:'اقترح 3 تطبيقات عملية صغيرة ومحددة لهذه الفكرة',ask:'اطرح 4 أسئلة نقدية تساعدني على اختبار صحة الفكرة، دون أن تحكم عليها',steps:'حوّل الفكرة إلى 5 خطوات تنفيذ صغيرة وقابلة للقياس'}[el.dataset.m];
+try{const s=await window.claude.use('sample');if(!s)throw{code:'na'};box.hidden=false;box.textContent='جارٍ التفكير…';const r=await s(`أنت مساعد تفكير يتحدث العربية. صاحب الفكرة هو من يقرر؛ لا تحكم بأن الفكرة صحيحة أو أنه طبّقها. ${M}.\nالفكرة: ${i.title}\nالشرح: ${i.exp||''}\nالاقتباس: ${i.quote||''}\nالمشكلة: ${i.prob||''}`,{onText:({text})=>box.textContent=text});box.textContent=r.text}catch(e){box.hidden=false;box.textContent=e.code==='not_granted'?'لم يُسمح باستخدام المساعد.':'المساعد غير متاح الآن.'}},
+async bak(){await dl('athar-backup-'+today()+'.json',JSON.stringify({app:'athar',v:1,at:new Date().toISOString(),cfg,items:D}))},
+async csv(el){const k=el.dataset.k,C={book:['title','author','cat','sub','st','pages','cur','rate','start','end','desc','notes'],idea:['title','exp','quote','pg','cat','imp','agree','st','tags','why','prob','ex',...FP.map(f=>f[0])],exp:['name','goal','days','start','end','steps','before','after','res','learn','dec','done']}[k];
+const q=v=>'"'+String(v??'').replace(/"/g,'""')+'"';await dl(k+'s-'+today()+'.csv','\ufeff'+[C.join(','),...of(k).map(o=>C.map(c=>q(o[c])).join(','))].join('\n'))}};
+const ec=v=>v.start&&v.end&&v.end<v.start?'تاريخ النهاية قبل البداية':'';
+function bf(o,nw){form(nw?'كتاب جديد':'تعديل الكتاب',FB,o,v=>{if(!v.cover&&!nw&&o.cover&&o.cover.startsWith('data:'))delete v.cover;Object.assign(o,v);sv(o,(nw?'كتاب جديد: ':'تعديل كتاب: ')+o.title);toast('تم الحفظ');refresh()},v=>v.pages!==''&&v.cur!==''&&v.cur>v.pages?'الصفحة الحالية أكبر من عدد الصفحات':v.start&&v.end&&v.end<v.start?'تاريخ الانتهاء قبل البدء':'')}
+async function dl(name,data){try{const d=await window.claude.use('downloads');if(!d)throw 0;await d.save({filename:name,data})}catch(e){if(e&&e.code==='declined')return;toast('التصدير غير متاح في هذا العرض. افتح الصفحة من رابطها داخل claude.ai.',1)}}
+const CH={st(el){const i=get(el.dataset.id);i.st=el.value;(i.hist=i.hist||[]).push({s:i.st,at:Date.now()});sv(i,'حالة فكرة: '+i.title+' ← '+IST[i.st]);toast('تغيّرت الحالة يدوياً');refresh()},
+sec(el){const b=get(el.dataset.id);(b.sec=b.sec||{})[el.dataset.k]=el.value;sv(b,'تحديث ملاحظات كتاب: '+b.title);toast('تم الحفظ')},
+theme(el){setTheme(el.value)},cats(el){const c=el.value.split('\n').map(x=>x.trim()).filter(Boolean);if(!c.length)return toast('يلزم تصنيف واحد على الأقل',1);cfg.cats=c;saveCfg();toast('تم الحفظ')},
+iv(el){const n=el.value.split(',').map(x=>+x.trim()).filter(x=>x>0);if(!n.length)return toast('أدخل أرقاماً موجبة مفصولة بفاصلة',1);cfg.iv=n;saveCfg();toast('تم الحفظ')},
+keep(el){if(+el.value>0){cfg.keep=+el.value;saveCfg();toast('تم الحفظ')}},
+async imp(el){const f=el.files[0];if(!f)return;try{const j=JSON.parse(await f.text());if(j.app!=='athar'||!Array.isArray(j.items)||j.items.some(x=>!x.id||!x.t))throw 0;if(!await ask(`سيتم استبدال كل بياناتك الحالية بـ ${j.items.length} عنصراً من النسخة الاحتياطية.`))return;D=[];if(!mem)try{db.transaction('i','readwrite').objectStore('i').clear()}catch(e){}j.items.forEach(put);if(j.cfg){cfg={...cfg,...j.cfg};saveCfg()}toast('تمت الاستعادة');refresh()}catch(e){toast('الملف ليس نسخة احتياطية صالحة من أثر',1)}el.value=''}};
+document.addEventListener('click',e=>{const el=e.target.closest('[data-a]');if(el&&A[el.dataset.a])A[el.dataset.a](el,e)});
+document.addEventListener('change',e=>{const el=e.target.closest('[data-ch]');if(el&&CH[el.dataset.ch])CH[el.dataset.ch](el)});
+document.addEventListener('input',e=>{const k=e.target.dataset?.q;if(k){Q[k]=e.target.value;k==='per'?refresh():lst()}});
+document.addEventListener('submit',e=>{const f=e.target,id=f.dataset?.lf;if(!id)return;e.preventDefault();const fd=new FormData(f),r=String(fd.get('r')).trim();if(!r)return toast('اكتب نتيجة اليوم',1);const o=get(id);(o.logs=o.logs||[]).push({d:fd.get('d')||today(),r,c:+fd.get('c'),h:String(fd.get('h')||'').trim()});sv(o,'سجل تجربة: '+o.name);toast('أُضيف السجل');refresh()});
+$('#qc').onsubmit=e=>{e.preventDefault();const v=$('#qci').value.trim();if(!v)return;newIdea({title:v});$('#qci').value='';toast('حُفظت في الوارد السريع. أكملها لاحقاً من «الأفكار».');if(pg==='home'||pg==='ideas')refresh()};
+const NAV=[['home','الرئيسية'],['library','مكتبتي'],['ideas','الأفكار'],['apply','التطبيقات'],['lab','مختبر التجارب'],['review','المراجعات'],['reports','التقارير'],['prefs','الإعدادات']];
+$('#nav').innerHTML='<div class="brand">أثر<small>ATHAR</small></div>'+NAV.map(([k,l])=>`<a href="#${k}" data-p="${k}">${l}</a>`).join('');
+function lst(){const e=$('#lst');if(e&&LST[pg])e.innerHTML=LST[pg]()}
+function draw(){const h=location.hash.slice(1);pg=P[h]?h:'home';$('#main').innerHTML=P[pg]();document.querySelectorAll('#nav a').forEach(a=>a.classList.toggle('on',a.dataset.p===(pg==='book'?'library':pg)));lst();const t=$('[data-ch=theme]');if(t)t.value=localStorage.getItem('athar_theme')||'auto'}
+const refresh=()=>{const y=scrollY;draw();scrollTo(0,y)};
+addEventListener('hashchange',()=>{Q={};draw();scrollTo(0,0)});
+(async()=>{await open();D=await all();const lim=cfg.keep*864e5;D.filter(x=>x.d&&Date.now()-x.d>lim).forEach(x=>rm(x.id));
+if(mem)$('#warn').innerHTML='<div class="warn">التخزين الدائم غير متاح في هذا المتصفح؛ ستضيع بياناتك عند إغلاق الصفحة. صدّر نسخة احتياطية باستمرار.</div>';
+try{navigator.storage?.persist?.()}catch(e){}
+draw();try{window.claude?.use('sample').then(s=>{if(s)document.body.classList.add('ai')}).catch(()=>{})}catch(e){}})();
+</script></body></html>
